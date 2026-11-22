@@ -1,4 +1,5 @@
-﻿report.docx
+﻿*.docx
+~$*.docx
 docx_build/
 temp_archive.zip
 *.log
