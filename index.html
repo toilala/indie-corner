@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indie Game Corner | Play in Browser</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <div class="logo-badge">G</div>
+        <span>Indie<strong>Corner</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>Home</span>
+        </a>
+
+        <a href="about.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>About Us</span>
+        </a>
+
+        <a href="contact.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>Contact</span>
+        </a>
+      </nav>
+
+      <button class="mobile-btn" id="mobileBtn" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="container">
+      <div class="page-intro">
+        <h1>Play Small Games Directly in Your Browser</h1>
+        <p class="text-sub text-justified">
+          Welcome to our lightweight indie arcade. We created three classic mini-games built completely with standard HTML5 Canvas, modern CSS layouts, and plain JavaScript without loading any external engines or game frameworks. Select a game below, hit start, and try to set a high score.
+        </p>
+      </div>
+
+      <section class="game-station">
+        <div class="game-tabs">
+          <button class="game-tab active" data-game="dodge">Asteroid Dodge</button>
+          <button class="game-tab" data-game="brick">Brick Bounce</button>
+          <button class="game-tab" data-game="snake">Classic Snake</button>
+        </div>
+
+        <div class="scoreboard">
+          <div>CURRENT GAME: <strong id="gameName">Asteroid Dodge</strong></div>
+          <div>SCORE: <strong id="scoreVal">0</strong> | HIGH: <strong id="highVal">0</strong></div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="game-bar">
+          <span class="instructions-text" id="gameTip">
+            Controls: Left / Right keys or mouse. Collect blue squares (+10), avoid red rocks.
+          </span>
+          <button id="startBtn" class="btn btn-primary">Start Game</button>
+        </div>
+      </section>
+
+      <section class="instructions-grid">
+        <div class="info-box">
+          <h3>1. Asteroid Dodge</h3>
+          <p class="text-justified">
+            Control your craft at the bottom of the screen. Slide left and right to intercept drifting blue power cores for points while dodging incoming red meteorites.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>2. Brick Bounce</h3>
+          <p class="text-justified">
+            A single-player breakout challenge. Keep the white ball in play using your paddle, aiming to clear every row of bricks without letting the ball fall past your paddle.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>3. Classic Snake</h3>
+          <p class="text-justified">
+            Navigate your snake across the grid using the arrow keys. Eat the red apples to grow longer and increase your score, but make sure not to crash into the walls or your own tail.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Indie Game Corner. Built with clean HTML, CSS, and vanilla JS.</p>
+      <p class="footer-credit">Brihaspati Koirala</p>
+    </div>
+  </footer>
+
+</body>
+</html>

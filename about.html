@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Indie Game Corner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <div class="logo-badge">G</div>
+        <span>Indie<strong>Corner</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>Home</span>
+        </a>
+
+        <a href="about.html" class="nav-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>About Us</span>
+        </a>
+
+        <a href="contact.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>Contact</span>
+        </a>
+      </nav>
+
+      <button class="mobile-btn" id="mobileBtn" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="container">
+      <div class="page-intro">
+        <h1>About Our Indie Corner</h1>
+        <p class="text-sub text-justified">
+          We built this website as an open-ended project for our Web Technology coursework. Rather than assembling a generic placeholder template, we wanted to build something genuinely functional and fun: a lightweight hub of browser games powered strictly by fundamental web technologies.
+        </p>
+      </div>
+
+      <section class="instructions-grid">
+        <div class="info-box">
+          <h3>Why We Made It</h3>
+          <p class="text-justified">
+            Many modern websites are weighed down by megabytes of unnecessary client-side packages. We wanted to see how much fun we could deliver using clean, handwritten HTML, responsive CSS with Flexbox and Grid, and modular vanilla JavaScript loops running directly on the native HTML5 Canvas API.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>How The Code Is Structured</h3>
+          <p class="text-justified">
+            The project follows strict separation of concerns. Page content and semantic landmarks live solely in HTML, presentation rules and responsive layouts are managed in a single stylesheet, and all interactive game logic and form validation run through an external JavaScript script.
+          </p>
+        </div>
+      </section>
+
+      <section style="margin-top: 2.5rem;">
+        <h2>The Project Team</h2>
+        <p class="text-sub text-justified" style="margin-top: 0.4rem;">
+          Our lab group collaborated across architecture, game design, and styling to bring this project to life.
+        </p>
+
+        <div class="team-grid">
+          <div class="team-box">
+            <h4>Bikash Sharma</h4>
+            <span class="role">Game Mechanics & Canvas Logic</span>
+            <p class="text-justified">Implemented the 60fps game loops, collision detection, and score tracking for the canvas games.</p>
+          </div>
+
+          <div class="team-box">
+            <h4>Anjali Shrestha</h4>
+            <span class="role">UI Layout & CSS Styling</span>
+            <p class="text-justified">Designed the responsive Flexbox header, Grid layouts, and clean typographic scale.</p>
+          </div>
+
+          <div class="team-box">
+            <h4>Rohan Maharjan</h4>
+            <span class="role">Semantic HTML & Navigation</span>
+            <p class="text-justified">Constructed accessible page landmarks, navigation SVG icons, and cross-page linking.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Indie Game Corner. Built with clean HTML, CSS, and vanilla JS.</p>
+      <p class="footer-credit">Brihaspati Koirala</p>
+    </div>
+  </footer>
+
+</body>
+</html>
