@@ -1,0 +1,5 @@
+﻿report.docx
+docx_build/
+temp_archive.zip
+*.log
+node_modules/
